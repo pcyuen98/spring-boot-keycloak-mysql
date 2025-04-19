@@ -265,3 +265,4 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2025-04-19 13:55:15.512  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2025-04-19 13:55:15.513  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
 2025-04-19 13:55:37.719  INFO 23492 --- [http-nio-8090-exec-5] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 14:37:03.931  WARN 23492 --- [HikariPool-6 housekeeper] c.z.h.p.HikariPool                       : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=35m19s166ms192µs).

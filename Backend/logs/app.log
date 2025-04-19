@@ -1,0 +1,267 @@
+2025-04-19 13:53:15.766  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 13:53:15.787  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 13:53:15.849  INFO 23492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-19 13:53:15.849  INFO 23492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-19 13:53:16.897  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 13:53:16.945  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2025-04-19 13:53:18.196  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 13:53:18.228  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 13:53:18.229  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 13:53:18.324  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 13:53:18.325  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2474 ms
+2025-04-19 13:53:18.632  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 13:53:18.731  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 13:53:18.982  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 13:53:19.041  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 13:53:19.123  INFO 23492 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 13:53:19.391  INFO 23492 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 13:53:19.485  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 13:53:20.081  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:53:20.089  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:53:20.875  INFO 23492 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5dc0a4a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70faead, org.springframework.security.web.context.SecurityContextPersistenceFilter@7119d12f, org.springframework.security.web.header.HeaderWriterFilter@5a800fe9, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@6f1ff00c, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@69a8875e, org.springframework.security.web.authentication.logout.LogoutFilter@35f116f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35417559, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bcdb819, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@289eebb9, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@3891e136, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42455235, org.springframework.security.web.session.SessionManagementFilter@2e3b2f6f, org.springframework.security.web.access.ExceptionTranslationFilter@310ed7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bcdb18a]
+2025-04-19 13:53:21.951  INFO 23492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 13:53:22.015  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 13:53:22.031  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 6.728 seconds (JVM running for 7.511)
+2025-04-19 13:53:23.558  INFO 23492 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 13:53:23.558  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 13:53:23.559  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-19 13:54:24.652  INFO 23492 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:24.657  INFO 23492 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 13:54:24.667  INFO 23492 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 13:54:24.781  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 13:54:24.782  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 13:54:25.096  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 13:54:25.108  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2025-04-19 13:54:25.301  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 13:54:25.303  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 13:54:25.304  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 13:54:25.331  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 13:54:25.331  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 545 ms
+2025-04-19 13:54:25.385  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 13:54:25.401  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2025-04-19 13:54:25.421  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2025-04-19 13:54:25.425  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 13:54:25.428  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 13:54:25.461  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:54:25.461  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:25.566  WARN 23492 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes\com\wcc\controller\LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wcc.controller.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Logger cannot be resolved to a type
+	LoggerFactory cannot be resolved
+	HelloController cannot be resolved to a type
+
+2025-04-19 13:54:25.567  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:25.567  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2025-04-19 13:54:25.570  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2025-04-19 13:54:25.573  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2025-04-19 13:54:25.582  INFO 23492 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-19 13:54:25.611 ERROR 23492 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes\com\wcc\controller\LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wcc.controller.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Logger cannot be resolved to a type
+	LoggerFactory cannot be resolved
+	HelloController cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.1.jar:2.7.1]
+	at com.wcc.WccApplication.main(WccApplication.java:12) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.1.jar:2.7.1]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wcc.controller.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Logger cannot be resolved to a type
+	LoggerFactory cannot be resolved
+	HelloController cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 22 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Logger cannot be resolved to a type
+	LoggerFactory cannot be resolved
+	HelloController cannot be resolved to a type
+
+	at com.wcc.controller.LoginController.<init>(LoginController.java:28) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 22 more
+
+2025-04-19 13:54:36.220  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 13:54:36.222  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 13:54:36.464  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 13:54:36.474  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2025-04-19 13:54:36.594  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 13:54:36.595  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 13:54:36.596  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 13:54:36.627  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 13:54:36.627  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 403 ms
+2025-04-19 13:54:36.732  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 13:54:36.772  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2025-04-19 13:54:36.796  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2025-04-19 13:54:36.805  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 13:54:36.812  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 13:54:36.860  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:54:36.861  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:37.101  WARN 23492 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes\com\wcc\controller\LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wcc.controller.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	HelloController cannot be resolved to a type
+
+2025-04-19 13:54:37.101  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:37.102  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2025-04-19 13:54:37.110  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2025-04-19 13:54:37.111  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2025-04-19 13:54:37.118  INFO 23492 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-19 13:54:37.122 ERROR 23492 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes\com\wcc\controller\LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wcc.controller.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	HelloController cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.1.jar:2.7.1]
+	at com.wcc.WccApplication.main(WccApplication.java:12) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.1.jar:2.7.1]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wcc.controller.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	HelloController cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 22 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	HelloController cannot be resolved to a type
+
+	at com.wcc.controller.LoginController.<init>(LoginController.java:30) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 22 more
+
+2025-04-19 13:54:38.633  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 13:54:38.633  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 13:54:38.900  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 13:54:38.910  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2025-04-19 13:54:39.014  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 13:54:39.015  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 13:54:39.016  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 13:54:39.034  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 13:54:39.035  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 401 ms
+2025-04-19 13:54:39.085  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 13:54:39.112  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2025-04-19 13:54:39.129  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2025-04-19 13:54:39.132  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 13:54:39.138  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 13:54:39.167  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:54:39.167  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:39.361  INFO 23492 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6908c202, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@324c353, org.springframework.security.web.context.SecurityContextPersistenceFilter@44c7221e, org.springframework.security.web.header.HeaderWriterFilter@2bea8443, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@62f090b3, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@53488ed3, org.springframework.security.web.authentication.logout.LogoutFilter@41d01846, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@387b5257, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47cc0187, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@6b6933f3, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@7c40065b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72f86c17, org.springframework.security.web.session.SessionManagementFilter@1c7ce635, org.springframework.security.web.access.ExceptionTranslationFilter@6343f069, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e481de7]
+2025-04-19 13:54:39.756  INFO 23492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 13:54:39.763  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 13:54:39.764  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 1.199 seconds (JVM running for 85.245)
+2025-04-19 13:54:39.766  INFO 23492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-19 13:54:39.813  INFO 23492 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 13:54:39.813  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 13:54:39.814  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-19 13:54:50.388  INFO 23492 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:50.390  INFO 23492 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2025-04-19 13:54:50.395  INFO 23492 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2025-04-19 13:54:50.495  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 13:54:50.495  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 13:54:50.653  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 13:54:50.662  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2025-04-19 13:54:50.792  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 13:54:50.793  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 13:54:50.793  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 13:54:50.816  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 13:54:50.817  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 320 ms
+2025-04-19 13:54:50.864  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 13:54:50.878  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2025-04-19 13:54:50.892  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2025-04-19 13:54:50.894  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 13:54:50.897  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 13:54:50.912  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:54:50.912  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:54:50.995  INFO 23492 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6dd17ea7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31647c8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4390a4ab, org.springframework.security.web.header.HeaderWriterFilter@7ecd7051, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@cebf30e, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@21444092, org.springframework.security.web.authentication.logout.LogoutFilter@19181487, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56b5d511, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@436f786e, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@1fb560b5, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@1cf6e301, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c46b9fe, org.springframework.security.web.session.SessionManagementFilter@7dec2e90, org.springframework.security.web.access.ExceptionTranslationFilter@53b8c101, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7442f196]
+2025-04-19 13:54:51.293  INFO 23492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 13:54:51.300  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 13:54:51.304  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 0.839 seconds (JVM running for 96.784)
+2025-04-19 13:54:51.305  INFO 23492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-19 13:54:51.510  INFO 23492 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 13:54:51.510  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 13:54:51.511  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-19 13:55:14.118  INFO 23492 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:55:14.119  INFO 23492 --- [Thread-17] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2025-04-19 13:55:14.129  INFO 23492 --- [Thread-17] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2025-04-19 13:55:14.230  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 13:55:14.231  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 13:55:14.385  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 13:55:14.393  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2025-04-19 13:55:14.466  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 13:55:14.467  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 13:55:14.468  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 13:55:14.486  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 13:55:14.486  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2025-04-19 13:55:14.531  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 13:55:14.548  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2025-04-19 13:55:14.565  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2025-04-19 13:55:14.567  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 13:55:14.574  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 13:55:14.597  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:55:14.597  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 13:55:14.715  INFO 23492 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3aecabc1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@728e326, org.springframework.security.web.context.SecurityContextPersistenceFilter@494b6a32, org.springframework.security.web.header.HeaderWriterFilter@16addd4e, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@77f065fe, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@392afa97, org.springframework.security.web.authentication.logout.LogoutFilter@14bd630c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4821900d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@309e63ea, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@36b210c7, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@58a2bac4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a999401, org.springframework.security.web.session.SessionManagementFilter@3d417b80, org.springframework.security.web.access.ExceptionTranslationFilter@7aaf789e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40ba0239]
+2025-04-19 13:55:14.990  INFO 23492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 13:55:14.995  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 13:55:14.997  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 0.793 seconds (JVM running for 120.478)
+2025-04-19 13:55:14.998  INFO 23492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-19 13:55:15.512  INFO 23492 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 13:55:15.512  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 13:55:15.513  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-19 13:55:37.719  INFO 23492 --- [http-nio-8090-exec-5] c.w.c.LoginController                    : User Login username=admin , password=adminpass

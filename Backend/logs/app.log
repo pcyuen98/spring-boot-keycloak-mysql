@@ -266,3 +266,688 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2025-04-19 13:55:15.513  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
 2025-04-19 13:55:37.719  INFO 23492 --- [http-nio-8090-exec-5] c.w.c.LoginController                    : User Login username=admin , password=adminpass
 2025-04-19 14:37:03.931  WARN 23492 --- [HikariPool-6 housekeeper] c.z.h.p.HikariPool                       : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=35m19s166ms192µs).
+2025-04-19 14:50:40.794  INFO 23492 --- [http-nio-8090-exec-1] o.s.a.AbstractOpenApiResource            : Init duration for springdoc-openapi is: 448 ms
+2025-04-19 15:02:43.660  WARN 23492 --- [HikariPool-6 housekeeper] c.z.h.p.HikariPool                       : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=3m9s404ms869µs).
+2025-04-19 15:08:09.594  INFO 23492 --- [http-nio-8090-exec-6] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 15:08:09.819  INFO 23492 --- [http-nio-8090-exec-7] o.k.a.KeycloakDeployment                 : Loaded URLs from http://localhost:8080/realms/master/.well-known/openid-configuration
+2025-04-19 15:08:34.617  INFO 23492 --- [http-nio-8090-exec-4] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 15:09:19.555  INFO 23492 --- [http-nio-8090-exec-4] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 15:10:22.768  INFO 23492 --- [http-nio-8090-exec-9] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 15:10:34.046  INFO 23492 --- [http-nio-8090-exec-1] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 15:11:36.226  INFO 23492 --- [http-nio-8090-exec-6] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:07:50.442  WARN 23492 --- [HikariPool-6 housekeeper] c.z.h.p.HikariPool                       : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=1m34s720ms266µs300ns).
+2025-04-19 17:09:55.327  INFO 23492 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:09:55.332  INFO 23492 --- [Thread-21] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2025-04-19 17:09:55.336  INFO 23492 --- [Thread-21] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2025-04-19 17:09:55.538  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23492 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:09:55.538  INFO 23492 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:09:55.714  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:09:55.720  INFO 23492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:09:55.812  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 17:09:55.814  INFO 23492 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 17:09:55.814  INFO 23492 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 17:09:55.833  INFO 23492 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 17:09:55.833  INFO 23492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 292 ms
+2025-04-19 17:09:55.890  WARN 23492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:09:55.914  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2025-04-19 17:09:55.927  INFO 23492 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2025-04-19 17:09:55.932  INFO 23492 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:09:55.937  INFO 23492 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:09:55.960  INFO 23492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:09:55.961  INFO 23492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:09:56.054  INFO 23492 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7185c46f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47a9dc58, org.springframework.security.web.context.SecurityContextPersistenceFilter@21ecad3f, org.springframework.security.web.header.HeaderWriterFilter@402e69d9, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@584d43dd, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@5e6643fe, org.springframework.security.web.authentication.logout.LogoutFilter@d292aa4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fd6d5cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c050f4e, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@6f4379f0, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@5b5b8878, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60680c03, org.springframework.security.web.session.SessionManagementFilter@135bfd6c, org.springframework.security.web.access.ExceptionTranslationFilter@668318e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67b36eb9]
+2025-04-19 17:09:56.304  INFO 23492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 17:09:56.311  INFO 23492 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 17:09:56.314  INFO 23492 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 0.824 seconds (JVM running for 11801.795)
+2025-04-19 17:09:56.318  INFO 23492 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename i18n/messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-04-19 17:09:58.504  INFO 23492 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 17:09:58.504  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 17:09:58.505  INFO 23492 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-19 17:10:19.617  INFO 30112 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 30112 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:10:19.629  INFO 30112 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:10:19.686  INFO 30112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-19 17:10:19.686  INFO 30112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-19 17:10:20.720  INFO 30112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:10:20.795  INFO 30112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:10:22.203  INFO 30112 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 17:10:22.256  INFO 30112 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 17:10:22.257  INFO 30112 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 17:10:22.447  INFO 30112 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 17:10:22.448  INFO 30112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2761 ms
+2025-04-19 17:10:22.724  WARN 30112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:10:22.831  INFO 30112 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:10:23.071  INFO 30112 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:10:23.164  INFO 30112 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:10:23.305  INFO 30112 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:10:23.725  INFO 30112 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:10:23.890  INFO 30112 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:10:24.535  INFO 30112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:10:24.540  INFO 30112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:10:25.406  INFO 30112 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ae31dc6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6401c086, org.springframework.security.web.context.SecurityContextPersistenceFilter@289340f8, org.springframework.security.web.header.HeaderWriterFilter@7bada90, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@70074722, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@1f12cb1d, org.springframework.security.web.authentication.logout.LogoutFilter@5a800fe9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34bc769f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5934ab0a, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@cbd6c65, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@46490487, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@112f9788, org.springframework.security.web.session.SessionManagementFilter@2e5adee, org.springframework.security.web.access.ExceptionTranslationFilter@4271cdcb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@184c7111]
+2025-04-19 17:10:26.473  INFO 30112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 17:10:26.537  INFO 30112 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 17:10:26.561  INFO 30112 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 7.492 seconds (JVM running for 8.321)
+2025-04-19 17:10:26.678  INFO 30112 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 17:10:26.678  INFO 30112 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 17:10:26.679  INFO 30112 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2025-04-19 17:10:41.612  INFO 30112 --- [http-nio-8090-exec-4] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:10:42.064  INFO 30112 --- [http-nio-8090-exec-5] o.k.a.KeycloakDeployment                 : Loaded URLs from http://localhost:8080/realms/master/.well-known/openid-configuration
+2025-04-19 17:11:22.829  INFO 30112 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:11:22.835  INFO 30112 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:11:22.856  INFO 30112 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:11:23.000  INFO 30112 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 30112 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:11:23.001  INFO 30112 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:11:23.192  INFO 30112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:11:23.204  INFO 30112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:11:23.321  INFO 30112 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 17:11:23.323  INFO 30112 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 17:11:23.323  INFO 30112 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 17:11:23.355  INFO 30112 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 17:11:23.356  INFO 30112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 353 ms
+2025-04-19 17:11:23.444  WARN 30112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:11:23.466  INFO 30112 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2025-04-19 17:11:23.485  INFO 30112 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2025-04-19 17:11:23.490  INFO 30112 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:11:23.499  INFO 30112 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:11:23.535  INFO 30112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:11:23.536  INFO 30112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:11:23.644  INFO 30112 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c4ac48f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50281124, org.springframework.security.web.context.SecurityContextPersistenceFilter@ee1eb04, org.springframework.security.web.header.HeaderWriterFilter@354ad4e7, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@2a40d348, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@41670418, org.springframework.security.web.authentication.logout.LogoutFilter@445cb0be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@495cbe85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ad2a6a5, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@f55f58, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@794bdc9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef32977, org.springframework.security.web.session.SessionManagementFilter@6dd2092, org.springframework.security.web.access.ExceptionTranslationFilter@2acda6e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@560243ad]
+2025-04-19 17:11:23.981  INFO 30112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 17:11:23.990  INFO 30112 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 17:11:23.993  INFO 30112 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 1.076 seconds (JVM running for 65.753)
+2025-04-19 17:11:23.997  INFO 30112 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-19 17:11:26.509  INFO 30112 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 17:11:26.509  INFO 30112 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 17:11:26.510  INFO 30112 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-19 17:11:41.171  INFO 30112 --- [http-nio-8090-exec-5] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:11:41.265  INFO 30112 --- [http-nio-8090-exec-6] o.k.a.KeycloakDeployment                 : Loaded URLs from http://localhost:8080/realms/master/.well-known/openid-configuration
+2025-04-19 17:13:23.625 DEBUG 30112 --- [http-nio-8090-exec-5] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:13:23.669 TRACE 30112 --- [http-nio-8090-exec-5] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:13:23.749 DEBUG 30112 --- [http-nio-8090-exec-5] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:13:23.749 TRACE 30112 --- [http-nio-8090-exec-5] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:16:02.972  INFO 30112 --- [http-nio-8090-exec-5] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:16:03.544  INFO 39720 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 39720 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:16:03.559  INFO 39720 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:16:04.330  INFO 39720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:16:04.391  INFO 39720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:16:05.152  INFO 39720 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:16:05.365  INFO 39720 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:16:05.451  INFO 39720 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:16:05.519  INFO 39720 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:16:05.789  INFO 39720 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:16:05.961  INFO 39720 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:16:06.391  INFO 39720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:16:06.398  INFO 39720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:16:06.711  WARN 39720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:16:07.650  INFO 39720 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12a7515b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c28654e, org.springframework.security.web.context.SecurityContextPersistenceFilter@18174bd9, org.springframework.security.web.header.HeaderWriterFilter@5d50e7f6, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@75c45c4b, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@2f70d78c, org.springframework.security.web.authentication.logout.LogoutFilter@5e405eaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b8b5d9e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e23e94, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@58fadccb, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@711fbcef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ded31cc, org.springframework.security.web.session.SessionManagementFilter@4a937d43, org.springframework.security.web.access.ExceptionTranslationFilter@5af47414, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f3fafca]
+2025-04-19 17:16:09.504  INFO 39720 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:16:09.505  INFO 39720 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:16:09.508  INFO 39720 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 3 ms
+2025-04-19 17:16:09.545  INFO 39720 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.477 seconds (JVM running for 8.063)
+2025-04-19 17:16:09.936  INFO 39720 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:16:09.938  INFO 39720 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:16:09.969  INFO 39720 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:16:48.375  INFO 30112 --- [http-nio-8090-exec-4] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:16:48.941  INFO 6280 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 6280 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:16:48.954  INFO 6280 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:16:49.811  INFO 6280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:16:49.892  INFO 6280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:16:50.625  INFO 6280 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:16:50.828  INFO 6280 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:16:50.900  INFO 6280 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:16:50.980  INFO 6280 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:16:51.159  INFO 6280 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:16:51.292  INFO 6280 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:16:51.677  INFO 6280 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:16:51.682  INFO 6280 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:16:52.002  WARN 6280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:16:52.912  INFO 6280 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12a7515b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c28654e, org.springframework.security.web.context.SecurityContextPersistenceFilter@18174bd9, org.springframework.security.web.header.HeaderWriterFilter@5d50e7f6, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@75c45c4b, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@2f70d78c, org.springframework.security.web.authentication.logout.LogoutFilter@5e405eaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b8b5d9e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e23e94, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@58fadccb, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@711fbcef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ded31cc, org.springframework.security.web.session.SessionManagementFilter@4a937d43, org.springframework.security.web.access.ExceptionTranslationFilter@5af47414, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f3fafca]
+2025-04-19 17:16:54.708  INFO 6280 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:16:54.708  INFO 6280 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:16:54.711  INFO 6280 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 2 ms
+2025-04-19 17:16:54.754  INFO 6280 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.276 seconds (JVM running for 7.888)
+2025-04-19 17:16:55.076 DEBUG 30112 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:16:55.077 TRACE 30112 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:16:55.091 DEBUG 30112 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:16:55.091 TRACE 30112 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:16:55.143  INFO 6280 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:16:55.147  INFO 6280 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:16:55.167  INFO 6280 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:20:14.042  INFO 30112 --- [http-nio-8090-exec-8] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:20:14.569  INFO 31732 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 31732 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:20:14.581  INFO 31732 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:20:15.327  INFO 31732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:20:15.383  INFO 31732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:20:16.086  INFO 31732 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:20:16.246  INFO 31732 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:20:16.312  INFO 31732 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:20:16.371  INFO 31732 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:20:16.606  INFO 31732 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:20:16.739  INFO 31732 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:20:17.103  INFO 31732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:20:17.110  INFO 31732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:20:17.375  WARN 31732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:20:18.249  INFO 31732 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45689582, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73db1a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@19877453, org.springframework.security.web.header.HeaderWriterFilter@74ed1d35, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@2d398cfb, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@34893693, org.springframework.security.web.authentication.logout.LogoutFilter@3c7f8c25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3af6d7a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@158cb50a, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@456c53a, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@7916568d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12a7515b, org.springframework.security.web.session.SessionManagementFilter@54fbaa65, org.springframework.security.web.access.ExceptionTranslationFilter@2e9f5499, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@737ae41a]
+2025-04-19 17:20:20.118  INFO 31732 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:20:20.119  INFO 31732 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:20:20.120  INFO 31732 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:20:20.151  INFO 31732 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.033 seconds (JVM running for 7.512)
+2025-04-19 17:20:20.425 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:20:20.426 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:20:20.443 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:20:20.444 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:20:20.492  INFO 31732 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:20:20.495  INFO 31732 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:20:20.517  INFO 31732 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:20:33.618  INFO 30112 --- [http-nio-8090-exec-7] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:20:34.135  INFO 34532 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 34532 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:20:34.142  INFO 34532 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:20:35.008  INFO 34532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:20:35.083  INFO 34532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:20:35.818  INFO 34532 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:20:36.060  INFO 34532 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:20:36.138  INFO 34532 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:20:36.227  INFO 34532 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:20:36.410  INFO 34532 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:20:36.597  INFO 34532 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:20:36.998  INFO 34532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:20:37.007  INFO 34532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:20:37.280  WARN 34532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:20:38.129  INFO 34532 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@678b3746, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45689582, org.springframework.security.web.context.SecurityContextPersistenceFilter@10264cb0, org.springframework.security.web.header.HeaderWriterFilter@d408c5d, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@54da736e, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@735b1ad2, org.springframework.security.web.authentication.logout.LogoutFilter@46e38c28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18174bd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52737c1, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@2f70d78c, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@456c53a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73db1a6, org.springframework.security.web.session.SessionManagementFilter@5d50e7f6, org.springframework.security.web.access.ExceptionTranslationFilter@55d98bbb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ae85aad]
+2025-04-19 17:20:40.003  INFO 34532 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:20:40.003  INFO 34532 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:20:40.005  INFO 34532 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 2 ms
+2025-04-19 17:20:40.036  INFO 34532 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.341 seconds (JVM running for 7.846)
+2025-04-19 17:20:40.292 DEBUG 30112 --- [http-nio-8090-exec-9] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:20:40.293 TRACE 30112 --- [http-nio-8090-exec-9] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:20:40.302 DEBUG 30112 --- [http-nio-8090-exec-9] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:20:40.302 TRACE 30112 --- [http-nio-8090-exec-9] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:20:40.337  INFO 34532 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:20:40.339  INFO 34532 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:20:40.355  INFO 34532 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:20:52.487  INFO 30112 --- [http-nio-8090-exec-4] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:20:52.983  INFO 37596 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 37596 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:20:52.994  INFO 37596 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:20:53.866  INFO 37596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:20:53.921  INFO 37596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:20:54.689  INFO 37596 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:20:54.903  INFO 37596 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:20:54.956  INFO 37596 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:20:55.010  INFO 37596 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:20:55.207  INFO 37596 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:20:55.349  INFO 37596 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:20:55.741  INFO 37596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:20:55.747  INFO 37596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:20:56.083  WARN 37596 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:20:56.973  INFO 37596 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4199761d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ca564aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@69e23e94, org.springframework.security.web.header.HeaderWriterFilter@3af6d7a7, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@2330c995, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@a5df98c, org.springframework.security.web.authentication.logout.LogoutFilter@7bdaf563, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12d28106, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3054cdd3, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@45dfb6a4, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@202ba60a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cd758be, org.springframework.security.web.session.SessionManagementFilter@9e092b5, org.springframework.security.web.access.ExceptionTranslationFilter@48e3017a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ded31cc]
+2025-04-19 17:20:58.830  INFO 37596 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:20:58.831  INFO 37596 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:20:58.832  INFO 37596 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:20:58.860  INFO 37596 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.295 seconds (JVM running for 7.847)
+2025-04-19 17:20:59.160 DEBUG 30112 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:20:59.161 TRACE 30112 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:20:59.175 DEBUG 30112 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:20:59.176 TRACE 30112 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:20:59.215  INFO 37596 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:20:59.220  INFO 37596 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:20:59.230  INFO 37596 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:21:28.495  INFO 30112 --- [http-nio-8090-exec-3] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:21:29.019  INFO 27304 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 27304 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:21:29.027  INFO 27304 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:21:29.850  INFO 27304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:21:29.911  INFO 27304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:21:30.684  INFO 27304 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:21:30.897  INFO 27304 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:21:30.943  INFO 27304 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:21:31.023  INFO 27304 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:21:31.226  INFO 27304 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:21:31.374  INFO 27304 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:21:31.733  INFO 27304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:21:31.739  INFO 27304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:21:32.002  WARN 27304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:21:33.417  INFO 27304 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12a7515b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c28654e, org.springframework.security.web.context.SecurityContextPersistenceFilter@18174bd9, org.springframework.security.web.header.HeaderWriterFilter@5d50e7f6, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@75c45c4b, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@2f70d78c, org.springframework.security.web.authentication.logout.LogoutFilter@5e405eaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b8b5d9e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e23e94, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@58fadccb, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@711fbcef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ded31cc, org.springframework.security.web.session.SessionManagementFilter@4a937d43, org.springframework.security.web.access.ExceptionTranslationFilter@5af47414, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f3fafca]
+2025-04-19 17:21:35.846  INFO 27304 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:21:35.846  INFO 27304 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:21:35.848  INFO 27304 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:21:35.885  INFO 27304 --- [main] c.w.DistanceTest                         : Started DistanceTest in 7.296 seconds (JVM running for 8.74)
+2025-04-19 17:21:36.126 DEBUG 30112 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:21:36.126 TRACE 30112 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:21:36.141 DEBUG 30112 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:21:36.141 TRACE 30112 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:21:36.176  INFO 27304 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:21:36.178  INFO 27304 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:21:36.194  INFO 27304 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:22:00.579  INFO 30112 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:22:00.580  INFO 30112 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2025-04-19 17:22:00.582  INFO 30112 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2025-04-19 17:22:00.677  INFO 30112 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 30112 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:22:00.678  INFO 30112 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:22:00.914  INFO 30112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:22:00.920  INFO 30112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:22:00.996  INFO 30112 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-19 17:22:00.997  INFO 30112 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-19 17:22:00.998  INFO 30112 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-19 17:22:01.014  INFO 30112 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-19 17:22:01.014  INFO 30112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 335 ms
+2025-04-19 17:22:01.058  WARN 30112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:22:01.071  INFO 30112 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2025-04-19 17:22:01.086  INFO 30112 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2025-04-19 17:22:01.088  INFO 30112 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:22:01.091  INFO 30112 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:22:01.112  INFO 30112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:22:01.113  INFO 30112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:22:01.241  INFO 30112 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@322ceea1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e244550, org.springframework.security.web.context.SecurityContextPersistenceFilter@787d895e, org.springframework.security.web.header.HeaderWriterFilter@6b6239f6, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@28c8ba6f, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@68e07520, org.springframework.security.web.authentication.logout.LogoutFilter@6783e4c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d1ef6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37c9db77, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@44dbcbcd, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@2ff9ff03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@442a66db, org.springframework.security.web.session.SessionManagementFilter@1d0b34dc, org.springframework.security.web.access.ExceptionTranslationFilter@3360c6dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2535420]
+2025-04-19 17:22:01.530  INFO 30112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-19 17:22:01.537  INFO 30112 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-19 17:22:01.540  INFO 30112 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 0.895 seconds (JVM running for 703.3)
+2025-04-19 17:22:01.542  INFO 30112 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-19 17:22:04.506  INFO 30112 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 17:22:04.507  INFO 30112 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-19 17:22:04.509  INFO 30112 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2025-04-19 17:22:28.968  INFO 30112 --- [http-nio-8090-exec-10] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:22:29.415  INFO 35604 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 35604 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:22:29.425  INFO 35604 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:22:30.344  INFO 35604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:22:30.401  INFO 35604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:22:31.110  INFO 35604 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:22:31.321  INFO 35604 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:22:31.376  INFO 35604 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:22:31.440  INFO 35604 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:22:31.624  INFO 35604 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:22:31.786  INFO 35604 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:22:32.167  INFO 35604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:22:32.175  INFO 35604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:22:32.460  WARN 35604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:22:33.302  INFO 35604 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c22cf4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25630ede, org.springframework.security.web.context.SecurityContextPersistenceFilter@62eb918, org.springframework.security.web.header.HeaderWriterFilter@3b8ce72, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@285ac29, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@2af1bf5a, org.springframework.security.web.authentication.logout.LogoutFilter@1eb207c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31428f76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c7f8c25, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@51eeae0a, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@76c2d002, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@399acce3, org.springframework.security.web.session.SessionManagementFilter@3054cdd3, org.springframework.security.web.access.ExceptionTranslationFilter@649a6d88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d0e6424]
+2025-04-19 17:22:35.124  INFO 35604 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:22:35.125  INFO 35604 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:22:35.125  INFO 35604 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2025-04-19 17:22:35.153  INFO 35604 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.099 seconds (JVM running for 7.613)
+2025-04-19 17:22:35.464  INFO 30112 --- [http-nio-8090-exec-1] o.k.a.KeycloakDeployment                 : Loaded URLs from http://localhost:8080/realms/master/.well-known/openid-configuration
+2025-04-19 17:22:35.496 DEBUG 30112 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:22:35.497 TRACE 30112 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:22:35.508 DEBUG 30112 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:22:35.509 TRACE 30112 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:22:35.545  INFO 35604 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:22:35.549  INFO 35604 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:22:35.570  INFO 35604 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:24:13.671  INFO 30112 --- [http-nio-8090-exec-1] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:24:14.259  INFO 33360 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 33360 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:24:14.280  INFO 33360 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:24:15.058  INFO 33360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:24:15.122  INFO 33360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:24:15.932  INFO 33360 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:24:16.085  INFO 33360 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:24:16.151  INFO 33360 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:24:16.235  INFO 33360 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:24:16.432  INFO 33360 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:24:16.606  INFO 33360 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:24:16.993  INFO 33360 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:24:17.001  INFO 33360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:24:17.347  WARN 33360 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:24:18.328  INFO 33360 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b1ad751, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0e6424, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b8ce72, org.springframework.security.web.header.HeaderWriterFilter@158cb50a, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@3b171fbd, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@45dfb6a4, org.springframework.security.web.authentication.logout.LogoutFilter@1a4c6e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3054cdd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21a462ce, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@30dd23e2, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@88fc9cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6da86e98, org.springframework.security.web.session.SessionManagementFilter@55c78556, org.springframework.security.web.access.ExceptionTranslationFilter@18174bd9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b1a3125]
+2025-04-19 17:24:20.139  INFO 33360 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:24:20.140  INFO 33360 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:24:20.141  INFO 33360 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:24:20.175  INFO 33360 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.422 seconds (JVM running for 7.973)
+2025-04-19 17:24:20.444 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:24:20.444 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:24:20.455 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:24:20.456 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:24:20.487  INFO 33360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:24:20.489  INFO 33360 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:24:20.503  INFO 33360 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:26:48.691  INFO 30112 --- [http-nio-8090-exec-2] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:26:49.189  INFO 29828 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 29828 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:26:49.205  INFO 29828 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:26:50.115  INFO 29828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:26:50.169  INFO 29828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:26:50.933  INFO 29828 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:26:51.110  INFO 29828 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:26:51.203  INFO 29828 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:26:51.300  INFO 29828 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:26:51.460  INFO 29828 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:26:51.583  INFO 29828 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:26:52.023  INFO 29828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:26:52.033  INFO 29828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:26:52.337  WARN 29828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:26:53.245  INFO 29828 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44f88149, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b1a3125, org.springframework.security.web.context.SecurityContextPersistenceFilter@158cb50a, org.springframework.security.web.header.HeaderWriterFilter@49bf5ec8, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@7dbe858f, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@8bb5c2a, org.springframework.security.web.authentication.logout.LogoutFilter@6b3d3e57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55c78556, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ce4eb42, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@5f1dadf4, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@d15f031, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4199761d, org.springframework.security.web.session.SessionManagementFilter@18711946, org.springframework.security.web.access.ExceptionTranslationFilter@5d50e7f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12a7515b]
+2025-04-19 17:26:54.975  INFO 29828 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:26:54.975  INFO 29828 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:26:54.976  INFO 29828 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:26:55.011  INFO 29828 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.24 seconds (JVM running for 7.712)
+2025-04-19 17:26:55.224 DEBUG 30112 --- [http-nio-8090-exec-5] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:26:55.224 TRACE 30112 --- [http-nio-8090-exec-5] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:26:55.237 DEBUG 30112 --- [http-nio-8090-exec-5] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:26:55.237 TRACE 30112 --- [http-nio-8090-exec-5] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:26:55.286  INFO 29828 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:26:55.289  INFO 29828 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:26:55.302  INFO 29828 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:27:39.721  INFO 30112 --- [http-nio-8090-exec-1] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:27:40.268  INFO 26236 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 26236 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:27:40.277  INFO 26236 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:27:41.272  INFO 26236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:27:41.334  INFO 26236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:27:42.075  INFO 26236 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:27:42.231  INFO 26236 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:27:42.300  INFO 26236 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:27:42.394  INFO 26236 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:27:42.573  INFO 26236 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:27:42.701  INFO 26236 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:27:43.114  INFO 26236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:27:43.123  INFO 26236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:27:43.410  WARN 26236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:27:44.391  INFO 26236 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b1ad751, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0e6424, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b8ce72, org.springframework.security.web.header.HeaderWriterFilter@158cb50a, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@20dc763b, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@12ebcdf6, org.springframework.security.web.authentication.logout.LogoutFilter@1a4c6e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3054cdd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21a462ce, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@75693526, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@39a1c200, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6da86e98, org.springframework.security.web.session.SessionManagementFilter@55c78556, org.springframework.security.web.access.ExceptionTranslationFilter@18174bd9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b1a3125]
+2025-04-19 17:27:46.247  INFO 26236 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:27:46.247  INFO 26236 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:27:46.249  INFO 26236 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:27:46.279  INFO 26236 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.446 seconds (JVM running for 7.916)
+2025-04-19 17:27:46.500 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:27:46.500 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:27:46.508 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:27:46.508 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:27:46.547  INFO 26236 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:27:46.549  INFO 26236 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:27:46.559  INFO 26236 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:28:39.381  INFO 30112 --- [http-nio-8090-exec-3] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:28:39.938  INFO 36464 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 36464 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:28:39.949  INFO 36464 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:28:40.820  INFO 36464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:28:40.879  INFO 36464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:28:41.596  INFO 36464 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:28:41.850  INFO 36464 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:28:41.914  INFO 36464 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:28:42.035  INFO 36464 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:28:42.210  INFO 36464 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:28:42.352  INFO 36464 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:28:42.733  INFO 36464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:28:42.740  INFO 36464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:28:43.032  WARN 36464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:28:43.835  INFO 36464 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b1ad751, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0e6424, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b8ce72, org.springframework.security.web.header.HeaderWriterFilter@158cb50a, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@20dc763b, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@12ebcdf6, org.springframework.security.web.authentication.logout.LogoutFilter@1a4c6e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3054cdd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21a462ce, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@75693526, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@39a1c200, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6da86e98, org.springframework.security.web.session.SessionManagementFilter@55c78556, org.springframework.security.web.access.ExceptionTranslationFilter@18174bd9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b1a3125]
+2025-04-19 17:28:45.651  INFO 36464 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:28:45.651  INFO 36464 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:28:45.652  INFO 36464 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:28:45.688  INFO 36464 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.221 seconds (JVM running for 7.689)
+2025-04-19 17:28:45.952 DEBUG 30112 --- [http-nio-8090-exec-7] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:28:45.954 TRACE 30112 --- [http-nio-8090-exec-7] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:28:45.969 DEBUG 30112 --- [http-nio-8090-exec-7] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:28:45.969 TRACE 30112 --- [http-nio-8090-exec-7] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:28:46.019  INFO 36464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:28:46.023  INFO 36464 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:28:46.043  INFO 36464 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-19 17:29:06.711  INFO 30112 --- [http-nio-8090-exec-5] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-19 17:29:07.229  INFO 23840 --- [main] c.w.DistanceTest                         : Starting DistanceTest using Java 17.0.10 on DESKTOP-HJNNGHP with PID 23840 (started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-19 17:29:07.239  INFO 23840 --- [main] c.w.DistanceTest                         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:29:08.013  INFO 23840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 17:29:08.081  INFO 23840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2025-04-19 17:29:08.815  INFO 23840 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-19 17:29:08.971  INFO 23840 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-19 17:29:09.029  INFO 23840 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 17:29:09.127  INFO 23840 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-19 17:29:09.326  INFO 23840 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-19 17:29:09.453  INFO 23840 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-19 17:29:09.840  INFO 23840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 17:29:09.850  INFO 23840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:29:10.153  WARN 23840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-19 17:29:11.073  INFO 23840 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b1ad751, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0e6424, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b8ce72, org.springframework.security.web.header.HeaderWriterFilter@158cb50a, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@20dc763b, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@12ebcdf6, org.springframework.security.web.authentication.logout.LogoutFilter@1a4c6e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3054cdd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21a462ce, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@75693526, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@39a1c200, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6da86e98, org.springframework.security.web.session.SessionManagementFilter@55c78556, org.springframework.security.web.access.ExceptionTranslationFilter@18174bd9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b1a3125]
+2025-04-19 17:29:12.954  INFO 23840 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-19 17:29:12.954  INFO 23840 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2025-04-19 17:29:12.956  INFO 23840 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2025-04-19 17:29:12.989  INFO 23840 --- [main] c.w.DistanceTest                         : Started DistanceTest in 6.201 seconds (JVM running for 7.706)
+2025-04-19 17:29:13.253 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:29:13.254 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-19 17:29:13.263 DEBUG 30112 --- [http-nio-8090-exec-3] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-19 17:29:13.263 TRACE 30112 --- [http-nio-8090-exec-3] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-19 17:29:13.303  INFO 23840 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 17:29:13.306  INFO 23840 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-19 17:29:13.327  INFO 23840 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

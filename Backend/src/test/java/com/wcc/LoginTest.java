@@ -19,8 +19,7 @@ import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
-public class PostRequestTest {
+public class LoginTest {
 
 	private static final String BASE_URL = "http://localhost:8090";
     
@@ -41,21 +40,23 @@ public class PostRequestTest {
                     String.class
             );
 
-            System.out.println("Status Code: " + response.getStatusCode());
+            System.out.println("Key Cloak HTTP Login Status Code: " + response.getStatusCode());
+            assertEquals(HttpStatus.OK, response.getStatusCode());
             ObjectMapper objectMapper = new ObjectMapper();
+            
+            assertNotNull(response.getBody());
+            
             JsonNode jsonNode = objectMapper.readTree(response.getBody());
             String accessToken = jsonNode.get("accessToken").asText();
 
             System.out.println("Access Token: " + accessToken);
-            PostRequestTest.token = accessToken;
+            LoginTest.token = accessToken;
 
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    
-
     
     @Test
     public void testPreAuthorized() {
@@ -65,20 +66,20 @@ public class PostRequestTest {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.set("authorization", "Bearer " + PostRequestTest.token); // Use the token variable
+        headers.set("authorization", "Bearer " + LoginTest.token); // Use the token variable
         HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(jsonObject, headers);
 
         RestTemplate restTemplate = new RestTemplate();
 
-        // Act
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
 
         // Assert
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
-        //  Add more specific assertions about the response body content if needed.
-        System.out.println("Response Body (Success): " + response.getBody()); //optional
-    }
+        System.out.println("Test Spring Boot HTTP Get Response Body (Success): " + response.getBody()); //optional
 
+        assertEquals(response.getBody(), "success");
+        //  Add more specific assertions about the response body content if needed.
+    }
 
 }

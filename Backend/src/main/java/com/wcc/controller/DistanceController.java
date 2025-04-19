@@ -1,6 +1,7 @@
 package com.wcc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,6 +23,7 @@ public class DistanceController {
 		return postService.findAll().toString();
 	}
 
+	@PreAuthorize("isAuthenticated()")
 	@GetMapping("/get")
 	public double getDistance(@RequestParam("source") String source, @RequestParam("dest") String dest) {
 

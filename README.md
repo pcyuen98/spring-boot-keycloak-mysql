@@ -28,9 +28,7 @@ You will need to have Docker Desktop open and running when you execute this comm
 
 The first time you run the application it will be slow because Docker needs to download and build the images specified in the `docker-compose.yml` file.  
 You will be able to know when the project is ready when all the containers compile correctly. You will see the next lines in log of each container:
-#### backend:  
-`SocialAppApiApplication: Started SocialAppApiApplication in 42.05 seconds (JVM running for 69.204)`
-`✔ Compiled successfully.`
+
 #### mysql:  
 `/usr/sbin/mysqld: ready for connections. Version: '8.0.30'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.`
 #### keycloak:  
@@ -40,7 +38,11 @@ You will be able to know when the project is ready when all the containers compi
 
 *Note 2: To deploy the application you need the following ports to be free on your PC: 3036, 4200, 8080 and 8090.*
 
-When all the containers are built, you will be able to open the application by putting `http://localhost:4200` in your browser.
+#### Run the backend: 
+`java -jar Backend\target\App_api-0.0.1-SNAPSHOT.jar`
+`2025-04-20 14:42:11.762  INFO 41372 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''`
+
+When all the containers are built and backend is started, you will be able to run the mvn command for JUnit Testing
 ## MVN JUnit Testing
 
 <b>JUnit Test Coverage</b>
@@ -50,7 +52,7 @@ When all the containers are built, you will be able to open the application by p
 <b>PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database.
 <b>RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability.
 
-`CD spring-boot-keycloak-mysql\Backend`
+`cd spring-boot-keycloak-mysql\Backend`
 `mvn clean install`
 
 `Expected result`
@@ -59,7 +61,7 @@ When all the containers are built, you will be able to open the application by p
 `[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0`
 `...`
 `[INFO] BUILD SUCCESS`
-<br>
+
 ## Tech Stack
 
 **Server:** Java, Spring Boot, Hibernate

@@ -30,7 +30,7 @@ import com.wcc.controller.LoginController;
  */
 @AutoConfigureMockMvc
 @SpringBootTest
-public class RepositotyTest {
+public class RepositoryTest {
 
     @Autowired
     private MockMvc mockMvc; // Added for more comprehensive testing

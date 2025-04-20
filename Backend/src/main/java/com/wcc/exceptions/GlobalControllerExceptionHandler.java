@@ -22,7 +22,7 @@ public class GlobalControllerExceptionHandler {
     public ResponseEntity<Map<String, Object>> handleAllExceptions(Exception ex) {
         
         Map<String, Object> restfulResponse = new HashMap<>();
-        restfulResponse.put("DemoAppException", HttpStatus.INTERNAL_SERVER_ERROR);
+        restfulResponse.put(DemoAppException.class.toString(), HttpStatus.INTERNAL_SERVER_ERROR);
         
         ResponseEntity<Map<String, Object>> responseEntity = ExceptionUtil.getResponseEntity("Demo App general Exception. ", HttpStatus.INTERNAL_SERVER_ERROR, ex);
         

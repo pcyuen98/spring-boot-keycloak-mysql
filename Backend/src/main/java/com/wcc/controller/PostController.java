@@ -2,6 +2,7 @@ package com.wcc.controller;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,11 +25,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name = "Post Controller", description = "Endpoints for calculating distances between postcodes")
 public class PostController {
 
-	private final PostService postService;
-
-	public PostController(PostService postService) {
-		this.postService = postService;
-	}
+	@Autowired
+	private PostService postService;
 
 	@Operation(summary = "Testing Services only", description = "For Testing without token access")
 	@GetMapping("/postcode/all")
@@ -38,9 +36,7 @@ public class PostController {
 
 	@PostMapping("/postcode/save")
 	public PostcodelatlngDTO save(@Valid @RequestBody PostcodelatlngDTO postcodelatlng) {
-
 		return postService.save(postcodelatlng);
-
 	}
 
 	@Operation(summary = "Calculate distance between two postcodes", description = "Calculates the distance in kilometers between two location  postcodes based on their lat/lng values")

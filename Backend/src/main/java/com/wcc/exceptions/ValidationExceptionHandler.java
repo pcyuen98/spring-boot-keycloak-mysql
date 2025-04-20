@@ -24,7 +24,7 @@ public class ValidationExceptionHandler {
 				.forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
 
 		ResponseEntity<Map<String, Object>> responseEntity = ExceptionUtil
-				.getResponseEntity("Demo App Validation error ", HttpStatus.INTERNAL_SERVER_ERROR, ex);
+				.getResponseEntity(ValidationExceptionHandler.class.toString(), HttpStatus.INTERNAL_SERVER_ERROR, ex);
 
 		if (logger.isErrorEnabled()) {
 			logger.error("Exception handled: {}", responseEntity);

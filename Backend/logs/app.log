@@ -13390,3 +13390,84 @@ Caused by: java.lang.ClassNotFoundException: Distance
 2025-04-20 10:11:03.740  INFO 11128 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-04-20 10:11:03.742  INFO 11128 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2025-04-20 10:11:03.755  INFO 11128 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-20 10:24:06.378 DEBUG 33592 --- [http-nio-8090-exec-7] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 10:24:06.379 TRACE 33592 --- [http-nio-8090-exec-7] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-20 10:24:06.414 DEBUG 33592 --- [http-nio-8090-exec-7] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 10:24:06.415 TRACE 33592 --- [http-nio-8090-exec-7] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-20 10:24:15.179  WARN 33592 --- [http-nio-8090-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-04-20 10:24:19.531 DEBUG 33592 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 10:24:19.532 TRACE 33592 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-20 10:24:19.548 DEBUG 33592 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 10:24:19.553 TRACE 33592 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-20 10:27:41.816  INFO 33592 --- [http-nio-8090-exec-4] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-20 10:27:51.133 DEBUG 33592 --- [http-nio-8090-exec-5] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 10:27:51.137 TRACE 33592 --- [http-nio-8090-exec-5] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-20 10:27:51.168 DEBUG 33592 --- [http-nio-8090-exec-5] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 10:27:51.170 TRACE 33592 --- [http-nio-8090-exec-5] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-20 10:29:03.941  INFO 33592 --- [http-nio-8090-exec-1] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-20 10:32:36.005  INFO 33592 --- [http-nio-8090-exec-1] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-20 10:34:21.361  INFO 33592 --- [http-nio-8090-exec-2] c.w.c.LoginController                    : User Login username=admin , password=adminpass
+2025-04-20 10:34:30.159 DEBUG 33592 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    insert 
+    into
+        postcodelatlng
+        (latitude, longitude, postcode) 
+    values
+        (?, ?, ?)
+2025-04-20 10:34:30.161 TRACE 33592 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [DOUBLE] - [0.1]
+2025-04-20 10:34:30.161 TRACE 33592 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [2] as [DOUBLE] - [0.2]
+2025-04-20 10:34:30.161 TRACE 33592 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [3] as [VARCHAR] - [A101]

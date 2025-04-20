@@ -3,8 +3,8 @@ App made with Spring Boot (Java), Keycloak and MySQL.
 
 This application allows:
 - Authorize restful GET HTTP services using plain username and password (By right should use POST, GET HTTP for demo purposes)
-- restful GET HTTP to get a distance between 2 postcodes
-- restful POST HTTP to save a postcode, latitude and longitude 
+- Restful GET HTTP to get a distance between 2 postcodes
+- Restful POST HTTP to save a postcode, latitude and longitude 
 
 ***Note:** this is a personal practice project and I do not allow its distribution.*  
 ## API Docs
@@ -42,10 +42,24 @@ You will be able to know when the project is ready when all the containers compi
 
 When all the containers are built, you will be able to open the application by putting `http://localhost:4200` in your browser.
 ## MVN JUnit Testing
+
+<b>JUnit Test Coverage</b>
+<b>ControllerTest</b> - Integration tests to verify the context loading and REST controller availability in the Spring Boot application.
+<b>DistanceTest</b> - Integration tests for the distance calculation and secured endpoint authorization.
+<b>LoginTest</b> - Integration test for verifying Keycloak authentication and authorization for protected Spring Boot endpoints.
+<b>PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database.
+<b>RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability.
+
 `CD spring-boot-keycloak-mysql\Backend`
 `mvn clean install`
 
-
+`Expected result`
+`[INFO] Results:`
+`[INFO]`
+`[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0`
+`...`
+`[INFO] BUILD SUCCESS`
+<br>
 ## Tech Stack
 
 **Server:** Java, Spring Boot, Hibernate

@@ -1,4 +1,5 @@
-com.wcc.config
+com.wcc
 com.wcc.config.auth
 com.wcc.model.repository
+com.wcc.model.service
 com.wcc.utility_classes

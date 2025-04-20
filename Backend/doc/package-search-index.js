@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.wcc.config"},{"l":"com.wcc.config.auth"},{"l":"com.wcc.model.repository"},{"l":"com.wcc.utility_classes"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.wcc.config.auth"},{"l":"com.wcc.model.repository"},{"l":"com.wcc.model.service"},{"l":"com.wcc.utility_classes"}];updateSearchResults();

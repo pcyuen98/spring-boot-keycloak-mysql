@@ -52,8 +52,10 @@ When all the containers are built and backend is started, you will be able to ru
 <b>4. PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database. <br>
 <b>5. RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability. <br>
 
-`cd spring-boot-keycloak-mysql\Backend`
-`mvn clean install`
+<br>
+<b>Run the command below</b> <br>
+cd spring-boot-keycloak-mysql\Backend<br>
+mvn clean install <br>
 
 `Expected result`
 `[INFO] Results:`

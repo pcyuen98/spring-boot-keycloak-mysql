@@ -45,11 +45,6 @@ When all the containers are built, you will be able to open the application by p
 `CD spring-boot-keycloak-mysql\Backend`
 `mvn clean install`
 
-http://localhost:8090/wcc/distance/get?source=50088&dest=70000
-{
-    "unit": "KM",
-    "distance": 53.91553527963154
-}
 
 ## Tech Stack
 
@@ -62,7 +57,7 @@ http://localhost:8090/wcc/distance/get?source=50088&dest=70000
 ## Postman Screen Shot
 <b>HTTP GET login</b>
 <p align="center">
-  <img width="700" height="700" src="/pic/login.png">
+  <img width="500" height="500" src="/pic/login.png">
 </p>
 
 <b>HTTP GET distance</b>

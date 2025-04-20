@@ -62,10 +62,10 @@ When all the containers are built, you will be able to open the application by p
 
 <b>HTTP GET distance</b>
 <p align="center">
-  <img width="460" height="300" src="/pic/distance.png">
+  <img width="800" height="500" src="/pic/distance.png">
 </p>
 
 <b>HTTP POST Save Postcode</b>
 <p align="center">
-  <img width="460" height="300" src="/pic/save.png">
+  <img width="800" height="500" src="/pic/save.png">
 </p>

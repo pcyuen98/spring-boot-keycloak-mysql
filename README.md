@@ -57,7 +57,7 @@ When all the containers are built, you will be able to open the application by p
 ## Postman Screen Shot
 <b>HTTP GET login</b>
 <p align="center">
-  <img width="600" height="500" src="/pic/login.png">
+  <img width="800" height="500" src="/pic/login.png">
 </p>
 
 <b>HTTP GET distance</b>

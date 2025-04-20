@@ -39,18 +39,18 @@ You will be able to know when the project is ready when all the containers compi
 *Note 2: To deploy the application you need the following ports to be free on your PC: 3036, 4200, 8080 and 8090.*
 
 #### Run the backend: 
-`java -jar Backend\target\App_api-0.0.1-SNAPSHOT.jar` <br>
+java -jar Backend\target\App_api-0.0.1-SNAPSHOT.jar <br>
 `2025-04-20 14:42:11.762  INFO 41372 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''`
 
 When all the containers are built and backend is started, you will be able to run the mvn command for JUnit Testing
 ## MVN JUnit Testing
 
 <b>JUnit Test Coverage</b> <br>
-<b>ControllerTest</b> - Integration tests to verify the context loading and REST controller availability in the Spring Boot application. <br>
-<b>DistanceTest</b> - Integration tests for the distance calculation and secured endpoint authorization. <br>
-<b>LoginTest</b> - Integration test for verifying Keycloak authentication and authorization for protected Spring Boot endpoints. <br>
-<b>PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database. <br>
-<b>RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability. <br>
+<b>1. ControllerTest</b> - Integration tests to verify the context loading and REST controller availability in the Spring Boot application. <br>
+<b>2. DistanceTest</b> - Integration tests for the distance calculation and secured endpoint authorization. <br>
+<b>3. LoginTest</b> - Integration test for verifying Keycloak authentication and authorization for protected Spring Boot endpoints. <br>
+<b>4. PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database. <br>
+<b>5. RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability. <br>
 
 `cd spring-boot-keycloak-mysql\Backend`
 `mvn clean install`

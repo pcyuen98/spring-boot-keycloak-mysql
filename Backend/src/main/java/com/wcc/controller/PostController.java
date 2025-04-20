@@ -2,7 +2,7 @@ package com.wcc.controller;
 
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,8 +24,11 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name = "Post Controller", description = "Endpoints for calculating distances between postcodes")
 public class PostController {
 
-	@Autowired
-	PostService postService;
+	private final PostService postService;
+
+	public PostController(PostService postService) {
+		this.postService = postService;
+	}
 
 	@Operation(summary = "Testing Services only", description = "For Testing without token access")
 	@GetMapping("/postcode/all")
@@ -34,28 +37,28 @@ public class PostController {
 	}
 
 	@PostMapping("/postcode/save")
-	public PostcodelatlngDTO save(@Valid @RequestBody PostcodelatlngDTO postcodelatlng) throws Exception {
-		
+	public PostcodelatlngDTO save(@Valid @RequestBody PostcodelatlngDTO postcodelatlng) {
+
 		return postService.save(postcodelatlng);
+
 	}
 
 	@Operation(summary = "Calculate distance between two postcodes", description = "Calculates the distance in kilometers between two location  postcodes based on their lat/lng values")
-	//@PreAuthorize("isAuthenticated()")
+	@PreAuthorize("isAuthenticated()")
 	@GetMapping("/get")
-	public com.wcc.model.bean.Distance getDistance(@RequestParam("source") String source, @RequestParam("dest") String dest) {
+	public com.wcc.model.bean.Distance getDistance(@RequestParam("source") String source,
+			@RequestParam("dest") String dest) {
 
 		Postcodelatlng postcodelatlngSource = postService.findByPostcode(source);
 
 		Postcodelatlng postcodelatlngDest = postService.findByPostcode(dest);
 
-		System.out.println("postcodelatlng:=" + postcodelatlngSource);
-
 		double distanceInKM = DistanceUtil.calculateDistance(postcodelatlngSource.getLatitude(),
 				postcodelatlngSource.getLongitude(), postcodelatlngDest.getLatitude(),
 				postcodelatlngDest.getLongitude());
-		
+
 		com.wcc.model.bean.Distance distance = new com.wcc.model.bean.Distance();
-		distance.setDistance(distanceInKM);
+		distance.setDistanceInBetween(distanceInKM);
 		distance.setUnit(DistanceUnit.KM);
 		return distance;
 	}

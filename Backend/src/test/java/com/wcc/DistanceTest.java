@@ -112,7 +112,7 @@ public class DistanceTest {
         ObjectMapper mapper = new ObjectMapper();
         Distance distance = mapper.readValue(responseBody, Distance.class);
         
-        assertTrue(distance.getDistance() > 0, "Distance must be more than 0");
+        assertTrue(distance.getDistanceInBetween() > 0, "Distance must be more than 0");
         
     }
 }

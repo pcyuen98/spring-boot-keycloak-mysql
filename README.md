@@ -39,18 +39,18 @@ You will be able to know when the project is ready when all the containers compi
 *Note 2: To deploy the application you need the following ports to be free on your PC: 3036, 4200, 8080 and 8090.*
 
 #### Run the backend: 
-`java -jar Backend\target\App_api-0.0.1-SNAPSHOT.jar`
+`java -jar Backend\target\App_api-0.0.1-SNAPSHOT.jar` <br>
 `2025-04-20 14:42:11.762  INFO 41372 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''`
 
 When all the containers are built and backend is started, you will be able to run the mvn command for JUnit Testing
 ## MVN JUnit Testing
 
-<b>JUnit Test Coverage</b>
-<b>ControllerTest</b> - Integration tests to verify the context loading and REST controller availability in the Spring Boot application.
-<b>DistanceTest</b> - Integration tests for the distance calculation and secured endpoint authorization.
-<b>LoginTest</b> - Integration test for verifying Keycloak authentication and authorization for protected Spring Boot endpoints.
-<b>PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database.
-<b>RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability.
+<b>JUnit Test Coverage</b> <br>
+<b>ControllerTest</b> - Integration tests to verify the context loading and REST controller availability in the Spring Boot application. <br>
+<b>DistanceTest</b> - Integration tests for the distance calculation and secured endpoint authorization. <br>
+<b>LoginTest</b> - Integration test for verifying Keycloak authentication and authorization for protected Spring Boot endpoints. <br>
+<b>PostRepositoryTest</b> - Unit tests for IPostRepository using H2 in-memory database. <br>
+<b>RepositotyTest</b> - Integration tests for verifying Spring context loading and controller availability. <br>
 
 `cd spring-boot-keycloak-mysql\Backend`
 `mvn clean install`
@@ -90,3 +90,9 @@ When all the containers are built and backend is started, you will be able to ru
 <p align="center">
   <img width="800" height="500" src="/pic/swagger.png">
 </p>
+
+## Special Note
+1. Authentication shall use HTTP POST instead of HTTP GET as password is exposed<br>
+http://localhost:8090/wcc/login?username=admin&password=adminpass<br><br>
+
+2. LoginController can be splited into another Microservices for scalability

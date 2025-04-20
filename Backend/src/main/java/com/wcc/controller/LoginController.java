@@ -4,8 +4,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -17,7 +16,6 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -28,16 +26,14 @@ import io.swagger.v3.oas.annotations.Operation;
 @RestController
 @RequestMapping("/wcc")
 public class LoginController {
-
-	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
+    @Value("${app.keycloakUrl}")
+    private String keycloakUrl;
+
 	@Operation(summary = "Login and retrieve access token from Keycloak using username and password. ", description = "Authenticates the user with Keycloak and returns an access token based on provided source and destination parameters. Should use HTTP POST for security purposes instead of GET. Demo purposes only")
 	@GetMapping("/login")
-	@ResponseBody
-	public ResponseEntity<?> login(@RequestParam("username") String username, @RequestParam("password") String password) {
-		// Keycloak server details
-		logger.info("User Login username={} , password={}", username, password );
-		String keycloakUrl = "http://localhost:8080/realms/master/protocol/openid-connect/token";
+	public ResponseEntity<Map<String, Object>> login(@RequestParam("username") String username, @RequestParam("password") String password) {
+
 		String clientId = "admin-cli";
 		String scope = "openid profile email";
 
@@ -54,28 +50,33 @@ public class LoginController {
 		map.add("client_id", clientId);
 		map.add("scope", scope);
 
-		ResponseEntity<Map> response;
+		ResponseEntity<Map<String, Object>> response;
 		Map<String, Object> restfulResponse = new HashMap<>();
 		try {
 			HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
-
 			RestTemplate restTemplate = new RestTemplate();
 
-			response = restTemplate.postForEntity(keycloakUrl, request, Map.class);
-		} catch (Exception e) {
+			@SuppressWarnings("unchecked")
+			Class<Map<String, Object>> responseType = (Class<Map<String, Object>>) (Class<?>) Map.class;
+			response = restTemplate.postForEntity(keycloakUrl, request, responseType);
+
+		} catch (RuntimeException e) {
 			throw new DemoAppException(e);
 		}
 
 		if (response.getStatusCode().is2xxSuccessful()) {
 			Map<String, Object> responseBody = response.getBody();
-			String accessToken = (String) responseBody.get("access_token");
-			if (accessToken != null) {
+
+			if (responseBody != null && responseBody.containsKey("access_token")) {
+				String accessToken = (String) responseBody.get("access_token");
 				restfulResponse.put("accessToken", accessToken);
 				return new ResponseEntity<>(restfulResponse, HttpStatus.OK);
 			} else {
+				restfulResponse.put("error", "Access token not found in response");
 				return new ResponseEntity<>(restfulResponse, HttpStatus.INTERNAL_SERVER_ERROR);
 			}
-		} else {			
+		} else {
+			restfulResponse.put("error", "Authentication failed");
 			return new ResponseEntity<>(restfulResponse, HttpStatus.UNAUTHORIZED);
 		}
 	}

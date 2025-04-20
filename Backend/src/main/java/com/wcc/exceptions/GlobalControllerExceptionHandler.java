@@ -19,14 +19,17 @@ public class GlobalControllerExceptionHandler {
 	private static final Logger logger = LoggerFactory.getLogger(GlobalControllerExceptionHandler.class);
 	
 	@ExceptionHandler(DemoAppException.class)
-    public ResponseEntity<?> handleAllExceptions(Exception ex) {
+    public ResponseEntity<Map<String, Object>> handleAllExceptions(Exception ex) {
         
         Map<String, Object> restfulResponse = new HashMap<>();
         restfulResponse.put("DemoAppException", HttpStatus.INTERNAL_SERVER_ERROR);
         
-        ResponseEntity<?> responseEntity = ExceptionUtil.getResponseEntity("Demo App general Exception. ", HttpStatus.INTERNAL_SERVER_ERROR, ex);
+        ResponseEntity<Map<String, Object>> responseEntity = ExceptionUtil.getResponseEntity("Demo App general Exception. ", HttpStatus.INTERNAL_SERVER_ERROR, ex);
         
-        logger.error(responseEntity.toString());
+        if (logger.isErrorEnabled()) {
+            logger.error("Exception handled: {}", responseEntity);
+        }
+        
         return responseEntity;
     }
 }

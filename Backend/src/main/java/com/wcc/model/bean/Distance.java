@@ -7,6 +7,6 @@ public class Distance {
 
 	private DistanceUnit unit;
 
-	private double distance;
+	private double distanceInBetween;
 
 }

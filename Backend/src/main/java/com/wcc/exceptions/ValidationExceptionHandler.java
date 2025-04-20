@@ -16,18 +16,20 @@ import java.util.Map;
 @ControllerAdvice
 public class ValidationExceptionHandler {
 	private static final Logger logger = LoggerFactory.getLogger(ValidationExceptionHandler.class);
-	
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<?> handleValidationException(MethodArgumentNotValidException ex) {
-        Map<String, String> errors = new HashMap<>();
-        ex.getBindingResult().getFieldErrors().forEach(error ->
-            errors.put(error.getField(), error.getDefaultMessage())
-        );
-        
-        ResponseEntity<?> responseEntity = ExceptionUtil.getResponseEntity("Demo App Validation error ", HttpStatus.INTERNAL_SERVER_ERROR, ex);
-        
-        logger.error(responseEntity.toString());
-        return responseEntity;
-        		
-    }
+
+	@ExceptionHandler(MethodArgumentNotValidException.class)
+	public ResponseEntity<Map<String, Object>> handleValidationException(MethodArgumentNotValidException ex) {
+		Map<String, String> errors = new HashMap<>();
+		ex.getBindingResult().getFieldErrors()
+				.forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
+
+		ResponseEntity<Map<String, Object>> responseEntity = ExceptionUtil
+				.getResponseEntity("Demo App Validation error ", HttpStatus.INTERNAL_SERVER_ERROR, ex);
+
+		if (logger.isErrorEnabled()) {
+			logger.error("Exception handled: {}", responseEntity);
+		}
+		return responseEntity;
+
+	}
 }

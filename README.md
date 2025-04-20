@@ -62,15 +62,15 @@ http://localhost:8090/wcc/distance/get?source=50088&dest=70000
 ## Postman Screen Shot
 <b>HTTP GET login</b>
 <p align="center">
-  <img width="460" height="300" src="/pic/login.jpg">
+  <img width="460" height="300" src="/pic/login.png">
 </p>
 
 <b>HTTP GET distance</b>
 <p align="center">
-  <img width="460" height="300" src="/pic/distance.jpg">
+  <img width="460" height="300" src="/pic/distance.png">
 </p>
 
 <b>HTTP POST Save Postcode</b>
 <p align="center">
-  <img width="460" height="300" src="/pic/save.jpg">
+  <img width="460" height="300" src="/pic/save.png">
 </p>

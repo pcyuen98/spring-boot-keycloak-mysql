@@ -24,4 +24,9 @@ public class PostService {
 	public Postcodelatlng findByPostcode(String postcodePrefix) {
 		return repository.findByPostcode(postcodePrefix);
 	}
+	
+	@Transactional()
+	public Postcodelatlng save(Postcodelatlng postcodelatlng) {
+		return repository.save(postcodelatlng);
+	}
 }

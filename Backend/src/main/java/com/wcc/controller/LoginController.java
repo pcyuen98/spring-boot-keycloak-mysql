@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.wcc.exceptions.DemoAppException;
+
 import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
@@ -57,13 +59,11 @@ public class LoginController {
 		try {
 			HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
 
-			// 3. Use RestTemplate
 			RestTemplate restTemplate = new RestTemplate();
 
 			response = restTemplate.postForEntity(keycloakUrl, request, Map.class);
 		} catch (Exception e) {
-			restfulResponse.put("exception", e.getMessage());
-			return new ResponseEntity<>(restfulResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new DemoAppException(e);
 		}
 
 		if (response.getStatusCode().is2xxSuccessful()) {
@@ -75,11 +75,12 @@ public class LoginController {
 			} else {
 				return new ResponseEntity<>(restfulResponse, HttpStatus.INTERNAL_SERVER_ERROR);
 			}
-		} else {
+		} else {			
 			return new ResponseEntity<>(restfulResponse, HttpStatus.UNAUTHORIZED);
 		}
 	}
 
+	@Operation(summary = "Controller to test isAuthenticated tag", description = "Token Must be provided to access. For Testing and Demo Purposes only")
 	@PreAuthorize("isAuthenticated()")
 	@GetMapping("/test")
 	public String test() {

@@ -1,6 +1,22 @@
 package com.wcc.utility_classes;
 
-public class Distance {
+/**
+ * Calculates the distance in kilometers between two points on the Earth's surface
+ * given their latitude and longitude coordinates.
+ * <p>
+ * This method uses the Haversine formula to account for the curvature of the Earth.
+ *
+ * @param latitude  Latitude of the first point in decimal degrees.
+ * @param longitude Longitude of the first point in decimal degrees.
+ * @param latitude2 Latitude of the second point in decimal degrees.
+ * @param longitude2 Longitude of the second point in decimal degrees.
+ * @return The distance between the two points in kilometers.
+ * @throws IllegalArgumentException if any of the input values are not valid
+ * (e.g., if latitudes are outside the range
+ * [-90, 90] or longitudes are outside the
+ * range [-180, 180]).
+ */
+public class DistanceUtil {
 
 	private final static double EARTH_RADIUS = 6371; // radius in kilometers
 

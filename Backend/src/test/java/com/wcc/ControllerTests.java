@@ -12,28 +12,54 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.wcc.controller.LoginController;
 
+/**
+ * Integration tests to verify the context loading and REST controller availability
+ * in the Spring Boot application.
+ * 
+ * <p>This test class ensures that:
+ * <ul>
+ *   <li>Spring context loads successfully</li>
+ *   <li>The {@link LoginController} is correctly injected</li>
+ *   <li>REST endpoints respond as expected</li>
+ * </ul>
+ * </p>
+ */
 @AutoConfigureMockMvc
 @SpringBootTest
 class ControllerTests {
 
-	@Autowired
-	private MockMvc mockMvc; // Added for more comprehensive testing
+    /** MockMvc instance used to simulate HTTP requests for controller testing */
+    @Autowired
+    private MockMvc mockMvc;
 
-	@Autowired
-	private LoginController loginController;
+    /** LoginController instance injected by Spring to verify controller loading */
+    @Autowired
+    private LoginController loginController;
 
-	@Test
-	void contextLoads() {
+    /**
+     * Verifies that the Spring application context loads without any issues.
+     */
+    @Test
+    void contextLoads() {
+        // No assertions needed; failure to load context will cause test to fail
+    }
 
-	}
+    /**
+     * Checks that the {@link LoginController} bean is correctly autowired and not null.
+     */
+    @Test
+    void testFinderControllerIsNotNull() {
+        assertNotNull(loginController, "LoginController should not be null (Autowired failed)");
+    }
 
-	@Test
-	void testFinderControllerIsNotNull() {
-		assertNotNull(loginController, "LoginController should not be null (Autowired failed)");
-	}
-
-	@Test
-	void testGetDistanceEndpoint() throws Exception {
-		mockMvc.perform(MockMvcRequestBuilders.get("/wcc/get")).andExpect(MockMvcResultMatchers.status().isOk());
-	}
+    /**
+     * Tests the `/wcc/distance/postcode/all` endpoint to ensure it responds with HTTP 200 OK.
+     * 
+     * @throws Exception if the request fails
+     */
+    @Test
+    void testGetDistanceEndpoint() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.get("/wcc/distance/postcode/all"))
+               .andExpect(MockMvcResultMatchers.status().isOk());
+    }
 }

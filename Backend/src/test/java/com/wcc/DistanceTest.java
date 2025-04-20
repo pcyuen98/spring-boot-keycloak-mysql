@@ -19,78 +19,100 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wcc.utility_classes.Distance;
+import com.wcc.model.bean.Distance;
+import com.wcc.utility_classes.DistanceUtil;
 
+/**
+ * Integration tests for the distance calculation and secured endpoint authorization.
+ * 
+ * <p>This test class includes:
+ * <ul>
+ *   <li>Verification of token retrieval from the Keycloak login endpoint</li>
+ *   <li>Calculation of distance between two coordinates</li>
+ *   <li>Authorization testing of the `/wcc/distance/get` endpoint</li>
+ * </ul>
+ * </p>
+ */
 @AutoConfigureMockMvc
 @SpringBootTest
 public class DistanceTest {
 
-	private static final String BASE_URL = "http://localhost:8090";
+    private static final String BASE_URL = "http://localhost:8090";
+    private static String token = "";
 
-	private static String token = "";
+    /**
+     * Setup method executed once before all test cases.
+     * Authenticates with the login endpoint and retrieves a Keycloak access token.
+     */
+    @BeforeAll
+    static void setup() {
+        try {
+            String endpoint = BASE_URL + "/wcc/login?username=admin&password=adminpass";
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+            HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
 
-	@BeforeAll
-	static void setup() {
-		try {
-			String endpoint = BASE_URL + "/wcc/login?username=admin&password=adminpass";
-			HttpHeaders headers = new HttpHeaders();
-			headers.setContentType(MediaType.APPLICATION_JSON);
-			HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
+            RestTemplate restTemplate = new RestTemplate();
+            ResponseEntity<String> response = restTemplate.exchange(endpoint, HttpMethod.GET, requestEntity, String.class);
 
-			RestTemplate restTemplate = new RestTemplate();
-			ResponseEntity<String> response = restTemplate.exchange(endpoint, HttpMethod.GET, requestEntity,
-					String.class);
+            System.out.println("Key Cloak HTTP Login Status Code: " + response.getStatusCode());
+            assertEquals(HttpStatus.OK, response.getStatusCode());
 
-			System.out.println("Key Cloak HTTP Login Status Code: " + response.getStatusCode());
-			assertEquals(HttpStatus.OK, response.getStatusCode());
-			ObjectMapper objectMapper = new ObjectMapper();
+            assertNotNull(response.getBody());
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(response.getBody());
+            String accessToken = jsonNode.get("accessToken").asText();
+            System.out.println("Access Token: " + accessToken);
 
-			assertNotNull(response.getBody());
+            DistanceTest.token = accessToken;
 
-			JsonNode jsonNode = objectMapper.readTree(response.getBody());
-			String accessToken = jsonNode.get("accessToken").asText();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-			System.out.println("Access Token: " + accessToken);
-			DistanceTest.token = accessToken;
+    /**
+     * Unit test to validate the distance calculation between Kuala Lumpur and Seremban.
+     */
+    @Test
+    public void testDistanceCalculation() {
+        double distance = DistanceUtil.calculateDistance(3.140853, 101.693207, 2.7261, 101.9447);
+        System.out.println("Distance is " + distance);
+        assertTrue(distance > 30 && distance < 200, "Distance not possible less than 30 or more than 200 kilometers");
+    }
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+    /**
+     * Integration test to verify the secured `/wcc/distance/get` endpoint returns 
+     * valid distance data when authenticated using a Bearer token.
+     * @throws JsonProcessingException 
+     * @throws JsonMappingException 
+     */
+    @Test
+    public void testDistanceURLisAuthorizedWithValidValue() throws JsonMappingException, JsonProcessingException {
+        String url = BASE_URL + "/wcc/distance/get?source=50088&dest=70000";
+        Map<String, Object> jsonObject = new HashMap<>();
 
-	// calculate distance from KL to Seremban
-	@Test
-	public void testDistanceCalculation() {
-		double distance = Distance.calculateDistance(3.140853, 101.693207, 2.7261, 101.9447);
-		System.out.println("distance is " + distance);
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set("authorization", "Bearer " + DistanceTest.token);
+        HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(jsonObject, headers);
 
-		assertTrue(distance > 30 && distance < 200, "Distance not possible less than 30 or more than 200 kilometers");
-	}
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
 
-	@Test
-	public void testDistanceURLisAuthorized() {
-		// Arrange
-		String url = BASE_URL + "/wcc/distance/get?source=50088&dest=70000";
-		Map<String, Object> jsonObject = new HashMap<>();
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        
+        String responseBody = response.getBody();
 
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.set("authorization", "Bearer " + DistanceTest.token); // Use the token variable
-		HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(jsonObject, headers);
-
-		RestTemplate restTemplate = new RestTemplate();
-
-		ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
-
-		// Assert
-		assertEquals(HttpStatus.OK, response.getStatusCode());
-		String responseBody = response.getBody();
-		assertNotNull(response.getBody());
-
-		assertTrue(Double.valueOf(responseBody) > 0, "Distance must more than 0");
-
-	}
-
+        ObjectMapper mapper = new ObjectMapper();
+        Distance distance = mapper.readValue(responseBody, Distance.class);
+        
+        assertTrue(distance.getDistance() > 0, "Distance must be more than 0");
+        
+    }
 }

@@ -6,14 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.wcc.model.entity.PostcodeMapper;
 import com.wcc.model.entity.Postcodelatlng;
+import com.wcc.model.entity.PostcodelatlngDTO;
 import com.wcc.model.repository.IPostRepository;
 
 @Service
 public class PostService {
 
 	@Autowired
-	IPostRepository repository;
+	private IPostRepository repository;
+	
+	@Autowired
+	private PostcodeMapper postcodeMapper;
 
 	@Transactional(readOnly = true)
 	public List<Postcodelatlng> findAll() {
@@ -25,8 +30,9 @@ public class PostService {
 		return repository.findByPostcode(postcodePrefix);
 	}
 	
-	@Transactional()
-	public Postcodelatlng save(Postcodelatlng postcodelatlng) {
-		return repository.save(postcodelatlng);
+	@Transactional
+	public PostcodelatlngDTO save(PostcodelatlngDTO postcodelatlng) {
+		Postcodelatlng savedEntity = repository.save(postcodeMapper.toEntity(postcodelatlng));
+		return postcodeMapper.toDto(savedEntity);
 	}
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.wcc.model.bean.DistanceUnit;
 import com.wcc.model.entity.Postcodelatlng;
+import com.wcc.model.entity.PostcodelatlngDTO;
 import com.wcc.model.service.PostService;
 import com.wcc.utility_classes.DistanceUtil;
 
@@ -33,7 +34,7 @@ public class PostController {
 	}
 
 	@PostMapping("/postcode/save")
-	public Postcodelatlng save(@Valid @RequestBody Postcodelatlng postcodelatlng) throws Exception {
+	public PostcodelatlngDTO save(@Valid @RequestBody PostcodelatlngDTO postcodelatlng) throws Exception {
 		
 		return postService.save(postcodelatlng);
 	}

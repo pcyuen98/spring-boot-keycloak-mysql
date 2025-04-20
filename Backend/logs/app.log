@@ -1,0 +1,147 @@
+2025-04-20 20:26:33.408  INFO 15048 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 15048 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-20 20:26:33.430  INFO 15048 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-20 20:26:33.511  INFO 15048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-20 20:26:33.512  INFO 15048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-20 20:26:34.761  INFO 15048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 20:26:34.845  INFO 15048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2025-04-20 20:26:36.229  INFO 15048 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-20 20:26:36.261  INFO 15048 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-20 20:26:36.262  INFO 15048 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-20 20:26:36.368  INFO 15048 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-20 20:26:36.368  INFO 15048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2855 ms
+2025-04-20 20:26:36.661  WARN 15048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 20:26:36.783  INFO 15048 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-20 20:26:37.079  INFO 15048 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-20 20:26:37.140  INFO 15048 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 20:26:37.242  INFO 15048 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-20 20:26:37.580  INFO 15048 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-20 20:26:37.743  INFO 15048 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-20 20:26:38.802  INFO 15048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-20 20:26:38.818  INFO 15048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 20:26:39.817  INFO 15048 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@647805ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66fe1267, org.springframework.security.web.context.SecurityContextPersistenceFilter@20d252b5, org.springframework.security.web.header.HeaderWriterFilter@7d851105, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@67d382b8, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@1625e68a, org.springframework.security.web.authentication.logout.LogoutFilter@7ffb4cfb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56758565, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e8937a3, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@14feaa64, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@6f432c01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e233857, org.springframework.security.web.session.SessionManagementFilter@1e5e755f, org.springframework.security.web.access.ExceptionTranslationFilter@2e4367a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fbb8fa0]
+2025-04-20 20:26:41.419  INFO 15048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-20 20:26:41.492  INFO 15048 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-20 20:26:41.505  INFO 15048 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 8.903 seconds (JVM running for 10.553)
+2025-04-20 20:26:49.664  INFO 15048 --- [http-nio-8090-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-20 20:26:49.665  INFO 15048 --- [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-20 20:26:49.666  INFO 15048 --- [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-20 20:27:04.760  INFO 15048 --- [http-nio-8090-exec-1] o.k.a.KeycloakDeployment                 : Loaded URLs from http://localhost:8080/realms/master/.well-known/openid-configuration
+2025-04-20 20:27:05.508 DEBUG 15048 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 20:27:05.545 TRACE 15048 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-20 20:27:05.643 DEBUG 15048 --- [http-nio-8090-exec-1] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 20:27:05.646 TRACE 15048 --- [http-nio-8090-exec-1] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-20 20:27:36.877 DEBUG 15048 --- [http-nio-8090-exec-4] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 20:27:36.879 TRACE 15048 --- [http-nio-8090-exec-4] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-20 20:27:36.912 DEBUG 15048 --- [http-nio-8090-exec-4] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 20:27:36.913 TRACE 15048 --- [http-nio-8090-exec-4] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]
+2025-04-20 20:32:47.793  INFO 15048 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 20:32:47.809  INFO 15048 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-04-20 20:32:47.838  INFO 15048 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-04-20 20:32:47.975  INFO 15048 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 15048 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-20 20:32:47.976  INFO 15048 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-20 20:32:48.468  INFO 15048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 20:32:48.482  INFO 15048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2025-04-20 20:32:48.706  INFO 15048 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-20 20:32:48.708  INFO 15048 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-20 20:32:48.709  INFO 15048 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-20 20:32:48.730  INFO 15048 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-20 20:32:48.730  INFO 15048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2025-04-20 20:32:48.824  WARN 15048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 20:32:48.856  INFO 15048 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2025-04-20 20:32:48.872  INFO 15048 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2025-04-20 20:32:48.876  INFO 15048 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 20:32:48.881  INFO 15048 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-20 20:32:48.910  INFO 15048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-20 20:32:48.910  INFO 15048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 20:32:49.085  INFO 15048 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e29489b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@92d04de, org.springframework.security.web.context.SecurityContextPersistenceFilter@200d28d4, org.springframework.security.web.header.HeaderWriterFilter@2dd78db1, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@7f2d6c9a, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@163fb3e3, org.springframework.security.web.authentication.logout.LogoutFilter@28033792, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51b69bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14b0d6a8, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@620d98c, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@6debd200, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1542a11f, org.springframework.security.web.session.SessionManagementFilter@7c0128a8, org.springframework.security.web.access.ExceptionTranslationFilter@1987868c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e22c6ff]
+2025-04-20 20:32:49.703  INFO 15048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-20 20:32:49.730  INFO 15048 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-20 20:32:49.741  INFO 15048 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 1.821 seconds (JVM running for 378.789)
+2025-04-20 20:32:49.743  INFO 15048 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-20 20:35:43.368  INFO 4272 --- [restartedMain] c.w.WccApplication                       : Starting WccApplication using Java 17.0.10 on DESKTOP-HJNNGHP with PID 4272 (D:\workspace\spring-boot-keycloak-mysql\Backend\target\classes started by User in D:\workspace\spring-boot-keycloak-mysql\Backend)
+2025-04-20 20:35:43.387  INFO 4272 --- [restartedMain] c.w.WccApplication                       : No active profile set, falling back to 1 default profile: "default"
+2025-04-20 20:35:43.469  INFO 4272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-20 20:35:43.470  INFO 4272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-20 20:35:44.554  INFO 4272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 20:35:44.615  INFO 4272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2025-04-20 20:35:45.908  INFO 4272 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2025-04-20 20:35:45.946  INFO 4272 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-04-20 20:35:45.947  INFO 4272 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2025-04-20 20:35:46.059  INFO 4272 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-04-20 20:35:46.059  INFO 4272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2587 ms
+2025-04-20 20:35:46.321  WARN 4272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 20:35:46.411  INFO 4272 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-04-20 20:35:46.685  INFO 4272 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-04-20 20:35:46.762  INFO 4272 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 20:35:46.902  INFO 4272 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-04-20 20:35:47.219  INFO 4272 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-20 20:35:47.303  INFO 4272 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-04-20 20:35:47.815  INFO 4272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-20 20:35:47.822  INFO 4272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 20:35:48.557  INFO 4272 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61451801, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@85f42e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@765eaa25, org.springframework.security.web.header.HeaderWriterFilter@1ce7b031, org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter@6b9c9863, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter@546f1999, org.springframework.security.web.authentication.logout.LogoutFilter@6a031f94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31476027, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d031edd, org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter@769f0059, org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter@79cfd169, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69087158, org.springframework.security.web.session.SessionManagementFilter@63a87a94, org.springframework.security.web.access.ExceptionTranslationFilter@2b10d78f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2689685b]
+2025-04-20 20:35:49.837  INFO 4272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-20 20:35:49.904  INFO 4272 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path ''
+2025-04-20 20:35:49.922  INFO 4272 --- [restartedMain] c.w.WccApplication                       : Started WccApplication in 7.149 seconds (JVM running for 7.951)
+2025-04-20 20:36:01.068  INFO 4272 --- [http-nio-8090-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-20 20:36:01.069  INFO 4272 --- [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-04-20 20:36:01.071  INFO 4272 --- [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-04-20 20:36:01.393  INFO 4272 --- [http-nio-8090-exec-3] o.k.a.KeycloakDeployment                 : Loaded URLs from http://localhost:8080/realms/master/.well-known/openid-configuration
+2025-04-20 20:36:18.439  INFO 4272 --- [http-nio-8090-exec-6] c.w.c.PostController                     : user query distance postcode source=50088 , destination=70000
+2025-04-20 20:36:18.748 DEBUG 4272 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 20:36:18.816 TRACE 4272 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [50088]
+2025-04-20 20:36:18.915 DEBUG 4272 --- [http-nio-8090-exec-6] o.h.SQL                                  : 
+    select
+        postcodela0_.id as id1_0_,
+        postcodela0_.latitude as latitude2_0_,
+        postcodela0_.longitude as longitud3_0_,
+        postcodela0_.postcode as postcode4_0_ 
+    from
+        postcodelatlng postcodela0_ 
+    where
+        postcodela0_.postcode=?
+2025-04-20 20:36:18.916 TRACE 4272 --- [http-nio-8090-exec-6] o.h.t.d.s.BasicBinder                    : binding parameter [1] as [VARCHAR] - [70000]

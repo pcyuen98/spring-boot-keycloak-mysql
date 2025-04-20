@@ -1,9 +1,17 @@
 package com.wcc.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties.Jwt;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wcc.exceptions.GlobalControllerExceptionHandler;
 import com.wcc.model.bean.DistanceUnit;
 import com.wcc.model.entity.Postcodelatlng;
 import com.wcc.model.entity.PostcodelatlngDTO;
@@ -25,6 +34,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name = "Post Controller", description = "Endpoints for calculating distances between postcodes")
 public class PostController {
 
+	private static final Logger logger = LoggerFactory.getLogger(PostController.class);
+	
 	@Autowired
 	private PostService postService;
 
@@ -44,6 +55,8 @@ public class PostController {
 	@GetMapping("/get")
 	public com.wcc.model.bean.Distance getDistance(@RequestParam("source") String source,
 			@RequestParam("dest") String dest) {
+
+		logger.info("user query distance postcode source={} , destination={}", source, dest );
 
 		Postcodelatlng postcodelatlngSource = postService.findByPostcode(source);
 

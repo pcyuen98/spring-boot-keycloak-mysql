@@ -98,3 +98,5 @@ mvn clean install <br>
 http://localhost:8090/wcc/login?username=admin&password=adminpass<br><br>
 
 2. LoginController can be splited into another Microservices for scalability
+
+3. Spring Boot must be started to run mvn test as it's include integration testing with keycloak.

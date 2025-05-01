@@ -8,6 +8,10 @@ import org.springframework.http.ResponseEntity;
 
 public class ExceptionUtil {
 
+	  private ExceptionUtil() {
+		    throw new IllegalStateException("Utility class");
+		  }
+	
 	public static ResponseEntity<Map<String, Object>> getResponseEntity(String msg, HttpStatus httpStatus, Exception e) {
 
 		Map<String, Object> restfulResponse = new HashMap<>();

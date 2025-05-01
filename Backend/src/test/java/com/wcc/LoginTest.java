@@ -96,7 +96,7 @@ public class LoginTest {
 		assertNotNull(response.getBody());
 		System.out.println("Test Spring Boot HTTP Get Response Body (Success): " + response.getBody());
 
-		assertEquals(response.getBody(), "success");
+		assertEquals("success", response.getBody());
 	}
 
 	/**
@@ -118,7 +118,7 @@ public class LoginTest {
 			restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
 		} catch (HttpClientErrorException e) {
 			System.out.println("Unauthorized Access Code: " + e.getRawStatusCode());
-			assertEquals(e.getRawStatusCode(), 401);
+			assertEquals(401, e.getRawStatusCode());
 		}
 	}
 }

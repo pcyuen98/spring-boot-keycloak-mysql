@@ -2,7 +2,6 @@ package com.wcc.model.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,11 +13,19 @@ import com.wcc.model.repository.IPostRepository;
 @Service
 public class PostService {
 
-	@Autowired
-	private IPostRepository repository;
-	
-	@Autowired
-	private PostcodeMapper postcodeMapper;
+	private final IPostRepository repository;
+	private final PostcodeMapper postcodeMapper;
+
+	/**
+	 * Constructor-based injection.
+	 *
+	 * @param repository the postcode repository
+	 * @param postcodeMapper mapper to convert between entity and DTO
+	 */
+	public PostService(IPostRepository repository, PostcodeMapper postcodeMapper) {
+		this.repository = repository;
+		this.postcodeMapper = postcodeMapper;
+	}
 
 	@Transactional(readOnly = true)
 	public List<Postcodelatlng> findAll() {
@@ -29,7 +36,7 @@ public class PostService {
 	public Postcodelatlng findByPostcode(String postcodePrefix) {
 		return repository.findByPostcode(postcodePrefix);
 	}
-	
+
 	@Transactional
 	public PostcodelatlngDTO save(PostcodelatlngDTO postcodelatlng) {
 		Postcodelatlng savedEntity = repository.save(postcodeMapper.toEntity(postcodelatlng));

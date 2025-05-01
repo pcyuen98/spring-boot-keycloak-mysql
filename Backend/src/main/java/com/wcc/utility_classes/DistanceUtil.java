@@ -20,6 +20,10 @@ public class DistanceUtil {
 
 	private final static double EARTH_RADIUS = 6371; // radius in kilometers
 
+	  private DistanceUtil() {
+		    throw new IllegalStateException("Utility class");
+		  }
+	  
 	public static double calculateDistance(double latitude, double longitude, double latitude2, double longitude2) {
 		// Using Haversine formula! See Wikipedia;
 		double lon1Radians = Math.toRadians(longitude);

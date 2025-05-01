@@ -67,7 +67,7 @@ public class PostRepositoryTest {
     @Test
     @DisplayName("Return null for non-existing postcode")
     public void testFindByPostcodeNotFound() {
-        Postcodelatlng found = postRepository.findByPostcode("99999");
+        Postcodelatlng found = postRepository.findByPostcode("100");
         assertNull(found);
     }
 }
